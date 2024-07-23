@@ -20,7 +20,7 @@ public class UserMain {
         List<UserVo> users =  userDao.getAllUsers();
 
         for (UserVo user : users) {
-            System.out.println(user);
+            System.out.print("ID : " + user.getId() + " / " + "email : " + user.getEmail() + " / " + "password : " + user.getPassword() + "\n");
         }
 
 
